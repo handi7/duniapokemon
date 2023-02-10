@@ -1,0 +1,28 @@
+.primary_btn {
+  background-color: #49d0b1;
+  color: white;
+  font-weight: 650;
+  border: none;
+  border-radius: 10px;
+}
+
+.primary_btn:hover {
+  background-color: #39b396;
+}
+
+.secondary_btn {
+  background-color: transparent;
+  color: #39b396;
+  font-weight: 650;
+  border: none;
+}
+
+.secondary_btn:hover {
+  color: #1d705d;
+}
+
+.input {
+  padding: 2px 10px;
+  border: 1px solid #39b396;
+  border-radius: 10px;
+}

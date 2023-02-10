@@ -1,0 +1,12 @@
+.container {
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.container span {
+  padding: 5px 10px;
+  background-color: #39b396;
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+}

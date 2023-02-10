@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "reactstrap";
 import classes from "../styles/pokemon.module.css";
+import pokeball from "../images/pokeball.png";
 
-export default function Pokemon({ pokemon }) {
+export default function Pokemon({ pokemon, page }) {
   const navigate = useNavigate();
   const [pokeDetail, setPokeDetail] = useState({});
 
@@ -18,7 +19,7 @@ export default function Pokemon({ pokemon }) {
   };
 
   const onPokemonClick = () => {
-    navigate(`/detail/${pokeDetail?.id}`);
+    navigate(`/detail/${pokeDetail?.id}/?page=${page}`);
   };
 
   const formatText = (text) => {
@@ -42,8 +43,11 @@ export default function Pokemon({ pokemon }) {
         </div>
       </div>
 
+      <img className={classes.pokeball} src={pokeball} alt={pokemon?.name} />
+
       <img
-        src={`https://img.pokemondb.net/sprites/home/normal/${pokemon?.name}.png`}
+        className={classes.pokemon_img}
+        src={`${process.env.REACT_APP_IMG_URL}/${pokemon?.name}.png`}
         alt={pokemon?.name}
       />
     </Card>

@@ -1,0 +1,34 @@
+.row {
+  padding: 5px 0px;
+}
+
+.row span {
+  font-weight: 700;
+  color: rgb(77, 77, 77);
+}
+
+.weak {
+  width: 100%;
+  color: #fc6c6d;
+}
+
+.weak::-moz-progress-bar {
+  background: #fc6c6d;
+}
+
+.weak::-webkit-progress-value {
+  background: #fc6c6d;
+}
+
+.strong {
+  width: 100%;
+  color: #49d0b1;
+}
+
+.strong::-moz-progress-bar {
+  background: #49d0b1;
+}
+
+.strong::-webkit-progress-value {
+  background: #49d0b1;
+}

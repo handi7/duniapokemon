@@ -1,0 +1,8 @@
+.row {
+  padding: 5px 0px;
+}
+
+.row span {
+  font-weight: 700;
+  color: rgb(77, 77, 77);
+}
