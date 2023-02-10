@@ -25,6 +25,8 @@ export default function PokeDetails() {
 
   const [pokeDetail, setPokeDetail] = useState({});
 
+  console.log(pokeDetail);
+
   const getPokeDetail = async (id) => {
     try {
       const res = await axios.get(
@@ -87,18 +89,6 @@ export default function PokeDetails() {
             >
               <Link to={`/base-stats/${pokeDetail?.id}/?page=${page}`}>
                 <span>Base Stats</span>
-              </Link>
-            </li>
-
-            <li
-              className={` ${
-                pathname.includes("/evolution")
-                  ? classes.tab_active
-                  : classes.tab
-              }`}
-            >
-              <Link to={`/evolution/${pokeDetail?.id}/?page=${page}`}>
-                <span>Evolution</span>
               </Link>
             </li>
 

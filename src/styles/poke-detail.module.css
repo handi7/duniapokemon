@@ -43,7 +43,7 @@
   width: 100%;
   min-height: 100%;
   top: 90%;
-  padding: 70px 30px 30px 30px;
+  padding: 10% 3% 30px 3%;
   background-color: white;
   border: 1px solid rgb(207, 207, 207);
   border-radius: 50px;
@@ -83,7 +83,6 @@
 }
 
 .frame {
-  padding: 0px 30px;
   margin-top: 50px;
 }
 
